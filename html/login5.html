@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!--title--->
+    <title>タクシーブログサイト_ワイヤーフレーム</title>
+    <!--end of title-->
+
+    <!--meta tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <!--end of meta tag-->
+
+    <!--link--->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker.css">
+    <!--end of link--->
+</head>
+<body>
+<div class="header">
+    <div class="container pt_15">
+        <div class="row">
+            <div class="col-md-3 col-4">
+                <div class="logo">
+                    <img src="images/logo.png">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="container top_mar">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="header_text">
+                <h3 class="bor_bottom">ユーザー登録</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="title_form">
+                <h3>メールを送信して登録する</h3>
+                <form class="form-inline">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">メール</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="example@taxi.jp">
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">タクシーID</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="半角英数字(小文字のみ)・ハイフン(-)">
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">パスワード</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="6文字以上半角英数字のみ">
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">生年月日</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="1999/1/1" id="datepicker">
+                    </div>
+
+                    <div class="input-group custmbor">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">性別</span>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" class="custom-control-input" id="customRadio" name="example" value="customEx" checked="">
+                            <label class="custom-control-label" for="customRadio">女性</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" class="custom-control-input" id="customRadio2" name="example" value="customEx">
+                            <label class="custom-control-label" for="customRadio2">男性 </label>
+                        </div>
+                    </div>
+
+                    <div class="center">
+                        <div class="bg">
+                            <div class="chiller_cb">
+                                <input id="myCheckboxoo1z" type="checkbox">
+                                <label for="myCheckboxoo1z"><b>利用規約</b> に同意する </label>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn_web">
+                        <button type="button" class="btn btn-btn">登録メールを送信</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="footer_text">
+                    <ul>
+                        <li><a href="#">ご利用にあたって</a></li>
+                        <li><a href="#"><b>お問い合わせ</b></a></li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="#"><b>利用規約</b></a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="display: none">
+            <div class="col-md-12">
+                <div class="footer_text mar_10">
+                    <ul>
+                        <li><a href="#">© AdobeXD Kit</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--js-->
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+<!--end of js-->
+
+<script type="text/javascript">
+    $('#datepicker').datepicker({
+        format: 'yyyymm/dd/',
+        startDate: '-3d'
+    });
+</script>
+
+</body>
+</html>
