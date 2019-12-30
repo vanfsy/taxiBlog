@@ -207,4 +207,21 @@
     .circle-thumbnail a h3 {
         font-size: 15px !important;
     }
+
+    .upload-title-right li {
+        margin-right: 8px !important;
+    }
+
+    .upload-title-right li a {
+        text-decoration: none;
+    }
+
+    .tab-inner li a {
+        font-size: 12px !important;
+    }
+
+    .edit-input input {
+        width: 83% !important;
+    }
+
 }
