@@ -41,7 +41,7 @@ body {
 a.post-heading{
     font-size:24px;
     color:#3B4043;
-    font-weight: bold;
+    /*font-weight: bold;*/
     text-decoration:none;
 }
 a.post-heading:hover{
@@ -125,7 +125,7 @@ a.read-more:hover{
  .circle-thumbnail a h3{
  	font-size: 20px;
  	font-style: normal;
- 	font-weight: bold;
+ 	/*font-weight: bold;*/
  	margin-bottom:0px;
  }
  .circle-thumbnail a:hover{color:#3B4043;}

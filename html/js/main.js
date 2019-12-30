@@ -83,3 +83,12 @@ $(document).ready(function(){
   });
 });
 /**end of hide and show**/
+
+function changeSelect(obj) {
+  let ind = obj.selectedIndex;
+  if (ind > 0) {
+    obj.classList.add('selected');
+  } else {
+    obj.classList.remove('selected');
+  }
+}
