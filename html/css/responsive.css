@@ -2,7 +2,9 @@
     .img_text h3 {
         font-size: 15px;
     }
-
+.meta ul{
+    text-align: center;
+}
     .tab-buttonsss span {
         font-size: 13px;
         margin-right: 1px;
@@ -93,6 +95,38 @@
 }
 
 @media (max-width: 767px) {
+
+.media.media-video .thumb {
+    margin: 0 auto !important;
+}
+.user-pane{
+        padding-left: 15px !important;
+}
+.had-sec h5 {
+  
+    margin-left: 50px;
+}
+.form01 label {
+    line-height: 26px;
+    margin-top: 15px;
+        margin-bottom: 0px;
+}
+.custom-radio2 label{
+    margin-top: 0px !important;
+}
+a.post-heading{
+    font-size: 18px !important;
+}
+.post-contant-list{
+    text-align: center;
+}
+.post-contant-list .meta{
+    text-align: left;
+}
+.button ul li {
+
+    margin-right: 0px;
+}
     .img_text h3 {
         font-size: 15px;
     }
@@ -148,7 +182,12 @@
     .wrap h5 {
         text-align: center;
     }
-
+    .logo {
+        line-height: 26px;
+    }
+    .button ul li a {
+        padding: 8px 12px;
+    }
     .custom-radio .custom-control-label::before {
         top: .25rem !important;
     }
@@ -207,21 +246,4 @@
     .circle-thumbnail a h3 {
         font-size: 15px !important;
     }
-
-    .upload-title-right li {
-        margin-right: 8px !important;
-    }
-
-    .upload-title-right li a {
-        text-decoration: none;
-    }
-
-    .tab-inner li a {
-        font-size: 12px !important;
-    }
-
-    .edit-input input {
-        width: 83% !important;
-    }
-
 }
