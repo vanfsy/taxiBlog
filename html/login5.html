@@ -24,7 +24,7 @@
 <div class="header">
     <div class="container pt_15">
         <div class="row">
-            <div class="col-md-3 col-4">
+            <div class="col-md-3 col-6">
                 <div class="logo">
                     <img src="images/logo.png">
                 </div>
@@ -73,7 +73,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text">生年月日</span>
                         </div>
-                        <input type="text" class="form-control" placeholder="1999/1/1" id="datepicker">
+                        <input type="text" class="form-control" placeholder="1999/1/1" id="datepicker1">
                     </div>
 
                     <div class="input-group custmbor">
@@ -140,9 +140,10 @@
 <!--end of js-->
 
 <script type="text/javascript">
-    $('#datepicker').datepicker({
-        format: 'yyyymm/dd/',
-        startDate: '-3d'
+    $('#datepicker1').datepicker({
+        format: 'yyyy/mm/dd',
+        startDate: '-3d',
+        language: 'ja'
     });
 </script>
 

@@ -30,13 +30,13 @@
 <div class="header">
 	<div class="container pt_15">
 		<div class="row">
-			<div class="col-md-3 col-4">
+			<div class="col-md-3 col-6">
 				<div class="logo">
 					<img src="images/logo.png">
 				</div>
 			</div>
 
-			<div class="col-md-9 col-8">
+			<div class="col-md-9 col-6">
 				<div class="button">
 					<ul>
 						<li><a href="#">ログアウト</a></li>
@@ -48,7 +48,7 @@
 </div>
 
 
-<div class="container top_mar">
+<div class="container top_mar ptm-0">
 	<div class="row  justify-content-center">
 		<div class="col-md-10 upload-header">
 			<h3 class="upload-title-left">マイページ</h3>
@@ -78,7 +78,13 @@
 						<div class="edit_head">
 							<div class="tab-head"><h3>記事の編集・削除</h3> </div>
 
-							<span class="paigtion02"><b><i class="fa fa-angle-left"></i> 2019年 <i class="fa fa-angle-right"></i></b>
+							<span class="paigtion02">  </i></b>
+
+<b><form class="form-inline">
+  <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value"><i class="fa fa-angle-left"></i></div>
+  <span class="year"><input type="number" id="number" value="2019" />年 </span>
+  <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value"><i class="fa fa-angle-right"></i></div>
+</form></b>
                         	<ul class="paigtion01">
                         	<li><a href="#">1月</a></li>
                         	<li><a href="#">|</a></li>
@@ -108,7 +114,7 @@
 
 						<div class="main_table">
 							<div class="row bg_color01">
-								<div class="col-md-6">
+								<div class="col-md-6 col-6">
 									<div class="sectopneton">
 										<select class="scer01">
 											<option>テーマを選択</option>
@@ -118,7 +124,7 @@
 									</div>
 								</div>
 
-								<div class="col-md-6">
+								<div class="col-md-6 col-6">
 									<div class="sectopneton">
 										<ul>
 											<li><a href="#" class="active">新しい順</a></li>
@@ -227,6 +233,22 @@
 <script src="https://cdn.ckeditor.com/4.13.1/standard/ckeditor.js"></script>
 <script>
 	CKEDITOR.replace( 'editor1' );
+</script>
+<script type="text/javascript">
+	function increaseValue() {
+  var value = parseInt(document.getElementById('number').value, 10);
+  value = isNaN(value) ? 0 : value;
+  value++;
+  document.getElementById('number').value = value;
+}
+
+function decreaseValue() {
+  var value = parseInt(document.getElementById('number').value, 10);
+  value = isNaN(value) ? 0 : value;
+  value < 1 ? value = 1 : '';
+  value--;
+  document.getElementById('number').value = value;
+}
 </script>
 </body>
 </html>

@@ -26,13 +26,19 @@ a:hover {
     margin-right: 10px;
 }
 
+.ml-15{
+    margin-left: 15px;
+}
 .pb_45{
     padding-bottom: 45px;
 } 
+.pb_20{
+    padding-bottom: 25px;
+}
 .button ul li a {
     color: #004BB1;
     border: 2px solid #004BB1;
-    padding: 8px 15px;
+    padding: 7px 15px;
     border-radius: 100px;
     transition: 0.4s;
     font-size: 14px;
@@ -43,6 +49,7 @@ list-style: none;
 padding-left: 0px;
 
 }
+
 .meta ul li{
     display:inline-block;
     margin-right: 10px;
@@ -635,8 +642,8 @@ a .blog-title{
 .addsection01 h3 {
     font-size: 18px;
     font-weight: 600;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     color: #3B4043;
 }
 
@@ -1033,7 +1040,7 @@ ol li {
 .name_input02 ::placeholder {
     color: #3B4043;
     font-size: 15px;
-    font-weight: 660;
+  
     font-style: normal;
 }
 
@@ -1056,6 +1063,7 @@ textarea:focus {
 }
 
 .mainlable {
+    padding-top: 8px;
 }
 
 .mainlable .custom-control-label::before {
