@@ -55,6 +55,7 @@
 			<ul class="upload-title-right">
 				<li><a href="#">プロフィール</a></li>
 				<li><a href="#">ブログ</a></li>
+				<li><a  type="button" class="nab-bar" ><i class="fa fa-bars" aria-hidden="true"></i></a></li>
 			</ul>
 		</div>
 	</div>
@@ -209,6 +210,16 @@
 <script src="https://cdn.ckeditor.com/4.13.1/standard/ckeditor.js"></script>
 <script>
 	CKEDITOR.replace( 'editor1' );
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+	
+		$('.nab-bar').click(function(){
+			$('.nav-tabs').slideToggle("slow");
+		});
+	});
+
+
 </script>
 </body>
 </html>

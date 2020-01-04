@@ -55,6 +55,7 @@
 			<ul class="upload-title-right">
 				<li><a href="#">プロフィール</a></li>
 				<li><a href="#">ブログ</a></li>
+				<li><a  type="button" class="nab-bar" ><i class="fa fa-bars" aria-hidden="true"></i></a></li>
 			</ul>
 		</div>
 	</div>
@@ -269,6 +270,14 @@
 		readURL(this);
 	});
 
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+	
+		$('.nab-bar').click(function(){
+			$('.nav-tabs').slideToggle("slow");
+		});
+	});
 </script>
 
 </body>

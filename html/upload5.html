@@ -55,6 +55,7 @@
 			<ul class="upload-title-right">
 				<li><a href="#">プロフィール</a></li>
 				<li><a href="#">ブログ</a></li>
+				<li><a  type="button" class="nab-bar" ><i class="fa fa-bars" aria-hidden="true"></i></a></li>
 			</ul>
 		</div>
 	</div>
@@ -93,16 +94,13 @@
 											<ul class="total-count">
 												<li>昨日(10/19)のアクセス数</li>
 												<li>0</li>
-												<li><div class="btn-group">
-													<button type="button" class="btn btn-light">平均 ０</button>
-													<button type="button" class="btn btn-light">ベスト ０</button></li>
+												<li><div class="btn-group">平均 ０ ベスト ０</div></li>
 											</ul>
 										</div>
 										<div class="total-right">
 											<ul class="total-count">
 												<li class="pb_20">全体ブログランキング</li>
 												<li>559,000位</li>
-
 											</ul>
 										</div>
 									</div>
@@ -127,7 +125,6 @@
 											</ul>
 										</div>
 									</div>
-
 								</div>
 							</div>
 
@@ -145,10 +142,9 @@
 									</ul>
 								</div>
 								<div class="row">
-									<div class="col-md-2">
+									<div class="col-md-2 col-2">
 									</div>
-
-									<div class="col-md-10 border053">
+									<div class="col-md-10 col-10 border053">
 										<div class="textboredr">
 											<textarea class="form-control" rows="5" id="comment"></textarea>
 										</div>
@@ -245,7 +241,14 @@
 	});
 
 </script>
-
+<script type="text/javascript">
+	$(document).ready(function(){
+	
+		$('.nab-bar').click(function(){
+			$('.nav-tabs').slideToggle("slow");
+		});
+	});
+</script>
 <script src="https://cdn.ckeditor.com/4.13.1/standard/ckeditor.js"></script>
 <script>
 	CKEDITOR.replace( 'editor1' );
