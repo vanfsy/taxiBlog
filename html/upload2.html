@@ -16,6 +16,7 @@
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	 <link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker.css">
 	<link rel="stylesheet" type="text/css" href="css/g-style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!--end of link--->
@@ -30,13 +31,13 @@
 <div class="header">
 	<div class="container pt_15">
 		<div class="row">
-			<div class="col-md-3 col-4">
+			<div class="col-md-3 col-6">
 				<div class="logo">
 					<img src="images/logo.png">
 				</div>
 			</div>
 
-			<div class="col-md-9 col-8">
+			<div class="col-md-9 col-6">
 				<div class="button">
 					<ul>
 						<li><a href="#">ログアウト</a></li>
@@ -48,13 +49,14 @@
 </div>
 
 
-<div class="container top_mar">
+<div class="container top_mar ptm-0">
 	<div class="row  justify-content-center">
 		<div class="col-md-10 upload-header">
 			<h3 class="upload-title-left">マイページ</h3>
 			<ul class="upload-title-right">
 				<li><a href="#">プロフィール</a></li>
 				<li><a href="#">ブログ</a></li>
+				<li><a  type="button" class="nab-bar" ><i class="fa fa-bars" aria-hidden="true"></i></a></li>
 			</ul>
 		</div>
 	</div>
@@ -87,6 +89,7 @@
 								<div class="conatint-tab-body">
 									<div class="row">
 										<div class="col-md-12">
+											  <form>
 											<div class="form-group">
 												<input type="email" class="form-control" placeholder="タイトルを入力してください" id="email">
 											</div>
@@ -97,9 +100,11 @@
 												<input type="text" class="form-control category-input" placeholder="＃カテゴリ：" ><button type="submit" class="btn btn-light">編集</button>
 											</div>
 
-											<div class="form-group edit-date" style="overflow: auto">
-												<input type="date" class="form-control" style="float: left" >
+											<div class="form-group edit-date" >
+												<input type="text" class="form-control"  placeholder="日付を選択してください" name="日付を選択してください" id="datepicker2" style="float: left">
 											</div>
+
+
 
 											<div class="form-group">
 												<input type="checkbox" name="comment" > コメント拒否
@@ -115,6 +120,7 @@
 													<li><a href="#">メンバー判定公開</a></li>
 												</ul>
 											</div>
+											  </form>
 										</div>
 									</div>
 								</div>
@@ -148,15 +154,7 @@
 			</div>
 		</div>
 
-		<div class="row" style="display: none">
-			<div class="col-md-12">
-				<div class="footer_text mar_10">
-					<ul>
-						<li><a href="#">© AdobeXD Kit</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
+		
 
 	</div>
 </div>
@@ -169,31 +167,37 @@
 <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="js/popper.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
 <!--end of js-->
 
 
 
 <script type="text/javascript">
-	function readURL(input) {
-		if (input.files && input.files[0]) {
-			var reader = new FileReader();
-			reader.onload = function(e) {
-				$('#imagePreview').css('background-image', 'url('+e.target.result +')');
-				$('#imagePreview').hide();
-				$('#imagePreview').fadeIn(650);
-			}
-			reader.readAsDataURL(input.files[0]);
-		}
-	}
-	$("#imageUpload").change(function() {
-		readURL(this);
-	});
-
+    $('#datepicker2').datepicker({
+        format: 'yyyy/mm/dd',
+        startDate: '-3d',
+        language: 'ja'
+    });
 </script>
-
 <script src="https://cdn.ckeditor.com/4.13.1/standard/ckeditor.js"></script>
+
+
 <script>
 	CKEDITOR.replace( 'editor1' );
+</script>
+
+
+
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+	
+		$('.nab-bar').click(function(){
+			$('.nav-tabs').slideToggle("slow");
+		});
+	});
 </script>
 </body>
 </html>

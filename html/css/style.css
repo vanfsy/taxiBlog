@@ -26,14 +26,55 @@ a:hover {
     margin-right: 10px;
 }
 
+.ml-15{
+    margin-left: 15px;
+}
+.pb_45{
+    padding-bottom: 45px;
+} 
+.pb_20{
+    padding-bottom: 25px;
+}
 .button ul li a {
     color: #004BB1;
     border: 2px solid #004BB1;
-    padding: 8px 15px;
+    padding: 7px 15px;
     border-radius: 100px;
     transition: 0.4s;
     font-size: 14px;
     font-weight: 600;
+}
+.meta ul{
+list-style: none;
+padding-left: 0px;
+
+}
+
+.meta ul li{
+    display:inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    position: relative;
+}
+.meta ul li:after{
+    content: "/";
+    position: absolute;
+    width: 10px; 
+    height: 24px;
+    right: -18px;
+}
+.meta ul li:last-child:after{
+    display: none;
+}
+.meta ul li:nth-child(1){
+    margin-left: 0px;
+}
+
+.form01 label{
+    line-height: 38px;
+}
+.custom-radio label{
+    line-height: 25px;
 }
 
 .button ul li a:hover {
@@ -42,14 +83,16 @@ a:hover {
     text-decoration: none;
     transition: 0.4s;
 }
-
+.logo{
+    line-height: 40px;
+}
 .logo img {
     width: 100%;
 }
 
 .pt_15 {
     padding-top: 15px;
-    padding-bottom: 23px;
+    padding-bottom: 18px;
 }
 
 .header_text h3 {
@@ -228,17 +271,6 @@ a .blog-title{
     position: relative;
 }
 
-.tab-buttonsss:before {
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    height: 2px;
-    background-color: #ddd;
-    left: 0px;
-    right: 0px;
-    z-index: 1;
-}
 
 .tab-buttonsss span {
     font-size: 14px;
@@ -246,11 +278,12 @@ a .blog-title{
     font-weight: 600;
     cursor: pointer;
     display: inline-block;
-    margin-right: 10px;
+    margin-right:0px;
     padding: 10px;
+    border-bottom: 2px solid #ddd;
 }
 
-.tab-buttonsss span.active {
+.tab-buttonsss span:hover, .tab-buttonsss span.active {
     border-bottom: 2px solid #333;
     position: relative;
     z-index: 9;
@@ -390,8 +423,8 @@ a .blog-title{
 .bg {
     height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+
+    justify-content: left;
     flex-direction: column;
 }
 
@@ -452,7 +485,7 @@ a .blog-title{
     padding-left: 2rem;
     position: relative;
     z-index: 2;
-    font-size: 14px;
+    font-size: 13px;
     cursor: pointer;
     margin-bottom: 0;
     font-weight: 400;
@@ -609,8 +642,8 @@ a .blog-title{
 .addsection01 h3 {
     font-size: 18px;
     font-weight: 600;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     color: #3B4043;
 }
 
@@ -860,6 +893,10 @@ input:focus {
     color: #3B4043;
 }
 
+.custom-radio1{
+    margin-left: 12px !important;
+}
+
 ol {
     padding: 0px;
     margin: 0px;
@@ -964,7 +1001,15 @@ ol li {
 
 /*end of sumit css**/
 
+.user-table{
+    width: 100%;
+    margin-top: 25px;
+}
+.user-table tbody tr th span{
+    float:right;
+    margin-right: 15px;
 
+}
 /***Profile***/
 .active_color {
     background-color: #004BB1;
@@ -995,7 +1040,7 @@ ol li {
 .name_input02 ::placeholder {
     color: #3B4043;
     font-size: 15px;
-    font-weight: 660;
+  
     font-style: normal;
 }
 
@@ -1018,6 +1063,7 @@ textarea:focus {
 }
 
 .mainlable {
+    padding-top: 8px;
 }
 
 .mainlable .custom-control-label::before {

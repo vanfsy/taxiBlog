@@ -2,7 +2,9 @@
     .img_text h3 {
         font-size: 15px;
     }
-
+.meta ul{
+    text-align: center;
+}
     .tab-buttonsss span {
         font-size: 13px;
         margin-right: 1px;
@@ -29,7 +31,7 @@
     }
 
     .chiller_cb label {
-        font-size: 11px;
+        font-size: 14px;
     }
 
     .btn-btn {
@@ -58,7 +60,7 @@
 
     .tab-contenttt h3 {
         font-size: 18px;
-        padding: 8px 0;
+
     }
 
     .tab-contenttt h4 {
@@ -79,7 +81,7 @@
     }
 
     .chiller_cb label {
-        font-size: 10px;
+        font-size: 14px;
     }
 
     .height {
@@ -93,6 +95,48 @@
 }
 
 @media (max-width: 767px) {
+    .login-heading h3{
+        font-size: 22px;
+    }
+    .paigtion02 b{
+        float: unset !important;
+    }
+
+.footer_text ul li a {
+    color: #fff;
+    font-size: 12px ;
+}
+.media.media-video .thumb {
+    margin: 0 auto !important;
+}
+.user-pane{
+        padding-left: 15px !important;
+}
+.had-sec h5 {
+  
+    margin-left: 50px;
+}
+.form01 label {
+    line-height: 26px;
+    margin-top: 15px;
+        margin-bottom: 0px;
+}
+.custom-radio2 label{
+    margin-top: 0px !important;
+}
+a.post-heading{
+    font-size: 18px !important;
+}
+.post-contant-list{
+    text-align: center;
+}
+.post-contant-list .meta{
+    text-align: left;
+}
+.button ul li {
+
+    margin-right: 0px;
+}
     .img_text h3 {
         font-size: 15px;
     }
@@ -109,6 +153,10 @@
         margin-top: 12px;
         margin-bottom: 18px;
     }
+    .title_form h3 {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
 
     .col_padd_right {
         padding-right: 15px;
@@ -126,7 +174,17 @@
         width: 90%;
         margin-left: 0px;
     }
+    .media.media-video .thumb {
 
+    width: 100% !important;
+}
+.nextandp .medal a, .nextandp .pre a, .nextandp .next a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 34px;
+    font-style: normal;
+    color: #3B4043;
+}
     .btn_web {
         width: 50%;
     }
@@ -142,13 +200,31 @@
     .wrap h5 {
         text-align: center;
     }
+
+.custmbor .input-group-prepend{
+    display: table-cell;
+}
+.input-group-prepend .input-group-text{
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 25px;
+}
+
 }
 
 @media (max-width: 500px) {
+        .custmbor{
+    display: table;
+}
     .wrap h5 {
         text-align: center;
     }
-
+    .logo {
+        line-height: 30px;
+    }
+    .button ul li a {
+        padding: 5px 6px;
+    }
     .custom-radio .custom-control-label::before {
         top: .25rem !important;
     }
@@ -174,7 +250,7 @@
     }
 
     .button ul li a {
-        font-size: 10px;
+        font-size: 7px;
     }
 
     .header_text h3 {
@@ -194,7 +270,17 @@
     .btn-two {
         width: 100%;
         margin-left: 0px;
+         margin-right: 0px;
+
     }
+    .media.media-video .thumb {
+
+    width: 100% !important;
+}
+    .text_wrap_content h2 {
+    font-size: 18px;
+
+}
 
     .btn_web {
         width: 80%;
@@ -207,21 +293,4 @@
     .circle-thumbnail a h3 {
         font-size: 15px !important;
     }
-
-    .upload-title-right li {
-        margin-right: 8px !important;
-    }
-
-    .upload-title-right li a {
-        text-decoration: none;
-    }
-
-    .tab-inner li a {
-        font-size: 12px !important;
-    }
-
-    .edit-input input {
-        width: 83% !important;
-    }
-
 }

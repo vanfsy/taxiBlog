@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,7 +24,7 @@
 <div class="header">
     <div class="container pt_15">
         <div class="row">
-            <div class="col-md-3 col-4">
+            <div class="col-md-3 col-6">
                 <div class="logo">
                     <img src="images/logo.png">
                 </div>
@@ -72,14 +73,14 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text">生年月日</span>
                         </div>
-                        <input type="text" class="form-control" placeholder="1999/1/1" id="datepicker">
+                        <input type="text" class="form-control" placeholder="1999/1/1" id="datepicker1">
                     </div>
 
                     <div class="input-group custmbor">
                         <div class="input-group-prepend">
                             <span class="input-group-text">性別</span>
                         </div>
-                        <div class="custom-control custom-radio custom-control-inline">
+                        <div class="custom-control custom-radio custom-radio1 custom-control-inline">
                             <input type="radio" class="custom-control-input" id="customRadio" name="example" value="customEx" checked="">
                             <label class="custom-control-label" for="customRadio">女性</label>
                         </div>
@@ -128,15 +129,6 @@
             </div>
         </div>
 
-        <div class="row" style="display: none">
-            <div class="col-md-12">
-                <div class="footer_text mar_10">
-                    <ul>
-                        <li><a href="#">© AdobeXD Kit</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 
@@ -148,9 +140,10 @@
 <!--end of js-->
 
 <script type="text/javascript">
-    $('#datepicker').datepicker({
-        format: 'yyyymm/dd/',
-        startDate: '-3d'
+    $('#datepicker1').datepicker({
+        format: 'yyyy/mm/dd',
+        startDate: '-3d',
+        language: 'ja'
     });
 </script>
 

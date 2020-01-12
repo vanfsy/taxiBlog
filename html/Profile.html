@@ -4,13 +4,11 @@
     <!--title--->
     <title>タクシーブログサイト_ワイヤーフレーム</title>
     <!--end of title-->
-
-    <!--meta tag-->
+	<!--meta tag-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <!--end of meta tag-->
-
-    <!--link--->
+	<!--link--->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -27,13 +25,12 @@
 <div class="header">
     <div class="container pt_15">
         <div class="row">
-            <div class="col-md-3 col-4">
+            <div class="col-md-3 col-6">
                 <div class="logo">
                     <img src="images/logo.png">
                 </div>
             </div>
-
-            <div class="col-md-9 col-8">
+            <div class="col-md-9 col-6">
                 <div class="button">
                     <ul>
                         <li><a href="#">ログイン</a></li>
@@ -54,7 +51,7 @@
                 </div>
             </div>
         </div>
-        <div class="row pb_15">
+        <div class="row pb_45">
             <div class="col-md-5">
                 <div class="circle_img01">
                     <img src="images/user-img.png">
@@ -90,19 +87,19 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <label>ニックネーム</label>
                         </div>
-                        <div class="col-md-10">
+                        <div class="col-md-9">
                             <input type="text" class="form-control mb-2 mr-sm-2" placeholder="yoshida0425" name="text">
                         </div>
                     </div>
 
                     <div class="row">
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <label>性別</label>
                         </div>
-                        <div class="col-md-10 mainlable">
+                        <div class="col-md-9 mainlable">
                             <div class="custom-control custom-radio custom-control-inline">
                                 <input type="radio" class="custom-control-input" id="customRadio" name="example" value="customEx" checked="">
                                 <label class="custom-control-label" for="customRadio">女性</label>
@@ -117,19 +114,19 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <label>生年月日</label>
                         </div>
-                        <div class="col-md-10">
+                        <div class="col-md-9">
                             <input type="text" class="form-control mb-2 mr-sm-2"  placeholder="日付を選択してください" name="日付を選択してください" id="datepicker1">
                         </div>
                     </div>
 
                     <div class="row">
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <label>勤務エリア</label>
                         </div>
-                        <div class="col-md-10">
+                        <div class="col-md-9">
                             <div class="select">
                                 <select class="" onchange="changeSelect(this)">
                                     <option value="">地域を選択して下さい</option>
@@ -162,10 +159,10 @@
 
 
                     <div class="row">
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <label>タクシー運転手経験年数</label>
                         </div>
-                        <div class="col-md-10">
+                        <div class="col-md-9">
                             <div class="select">
                                 <select onchange="changeSelect(this)">
                                     <option value="">選択して下さい</option>
@@ -203,15 +200,7 @@
             </div>
         </div>
 
-        <div class="row" style="display: none">
-            <div class="col-md-12">
-                <div class="footer_text mar_10">
-                    <ul>
-                        <li><a href="#">© AdobeXD Kit</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        
     </div>
 </div>
 
@@ -232,8 +221,9 @@
 
 <script type="text/javascript">
     $('#datepicker1').datepicker({
-        format: 'yyyymm/dd/',
-        startDate: '-3d'
+        format: 'yyyy/mm/dd',
+        startDate: '-3d',
+        language: 'ja'
     });
 </script>
 </body>
